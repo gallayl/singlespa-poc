@@ -5,7 +5,7 @@ export const RootComponent = () => {
   const [count, setCount] = useState(0);
   return (
     <div>
-      <h1>React version {version}</h1>
+      <h5>React version {version}</h5>
 
       <button onClick={() => setCount(count - 1)}>-1</button>
       <span style={{ padding: "8px" }}>Count: {count}</span>

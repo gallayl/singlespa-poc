@@ -6,7 +6,15 @@
   "author": "Lajos Gallay <gallay.lajos@gmail.com>",
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "apps/*"
-  ]
+  "workspaces": {
+    "nohoist": [
+      "**/react",
+      "**/react-dom",
+      "**/single-spa",
+      "**/single-spa-react"
+    ],
+    "packages": [
+      "apps/*"
+    ]
+  }
 }

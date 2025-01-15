@@ -1,4 +1,7 @@
 import { registerApplication, start } from "single-spa";
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { RootComponent } from "./RootComponent";
 
 registerApplication({
   name: "app1",
@@ -15,3 +18,7 @@ registerApplication({
 });
 
 start({});
+
+const root = createRoot(document.getElementById("root"));
+
+root.render(<RootComponent />);

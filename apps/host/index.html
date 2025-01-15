@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Host</title>
-    <script type="module" src="./src/index.ts"></script>
+    <script type="module" src="./src/index.tsx"></script>
     <script>
       function onSetPageToSpa1() {
         window.history.pushState({}, "SPA1", "/app1");
@@ -15,10 +15,19 @@
   </head>
   <body>
     <h1>Host</h1>
-    <div id="app"></div>
-    <button onclick="onSetPageToSpa1()">App 1</button>
-    <button onclick="onSetPageToSpa2()">App 2</button>
-    <div id="single-spa-application:app1"></div>
-    <div id="single-spa-application:app2"></div>
+
+    <hr />
+
+    <div id="root"></div>
+    <hr />
+    <div style="margin: 16px; padding: 16px; border: 1px solid #ccc">
+      <h3>Registered applications</h3>
+      Switch client: &nbsp;
+      <button onclick="onSetPageToSpa1()">App 1</button>
+      <button onclick="onSetPageToSpa2()">App 2</button>
+
+      <div id="single-spa-application:app1"></div>
+      <div id="single-spa-application:app2"></div>
+    </div>
   </body>
 </html>
