@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Host</title>
+    <script type="module" src="./src/index.ts"></script>
+    <script>
+      function onSetPageToSpa1() {
+        window.history.pushState({}, "SPA1", "/app1");
+      }
+
+      function onSetPageToSpa2() {
+        window.history.pushState({}, "SPA2", "/app2");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Host</h1>
+    <div id="app"></div>
+    <button onclick="onSetPageToSpa1()">App 1</button>
+    <button onclick="onSetPageToSpa2()">App 2</button>
+    <div id="single-spa-application:app1"></div>
+    <div id="single-spa-application:app2"></div>
+  </body>
+</html>

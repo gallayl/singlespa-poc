@@ -1,0 +1,12 @@
+{
+  "name": "singlespa-poc",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/gallayl/singlespa-poc.git",
+  "author": "Lajos Gallay <gallay.lajos@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ]
+}

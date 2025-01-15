@@ -1,0 +1,13 @@
+{
+  "name": "host",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "single-spa": "^6.0.3",
+    "vite": "^6.0.7"
+  },
+  "scripts": {
+    "start": "vite --port 8080"
+  }
+}
